@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.mylibrary.ArrayToolas;
 import com.example.rxjavaexamples.kotlinmodels.Car;
 import com.example.rxjavaexamples.kotlinmodels.KtEventEmitter;
 
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ArrayToolas.printAArr(new int[]{13,23,46});
         findViewById(R.id.click_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
